@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0B0C10; /* Um preto azulado profundo */
+    color: #C5C6C7; /* Um cinza claro com tom suave */
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 0px;
+}
+
+.topbar {
+    background-color: #1F2833; /* Um cinza azulado escuro */
+    color: #66FCF1; /* Verde-água cibernético */ 
+    padding: 30px;
+    top: 2%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(102, 252, 241, 0.2); /* Sombra sutil com tom cibernético */
+}
+
+/* Títulos */
+h1 {
+    margin-left: 20px;
+    font-size: 54px;
+    color: #C5C6C7;
+    text-shadow: 0 0 5px rgba(102, 252, 241, 0.3); /* Sombra sutil de texto */
+}
+
+h2 {
+    color: #C5C6C7;
+    font-size: 28px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+}
+
+.content {
+    max-width: 50%;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding-right: 20px;
+}
+
+#portifolio {
+    margin: 20px 0;
+    font-size: 38px;
+    font-weight: 600;
+    color: #66FCF1; /* Verde-água cibernético */
+}
+
+#destaque_roxo {
+    color: #C5C6C7;
+    margin-bottom: 22px;
+    line-height: 1.4;
+}
+
+#destaque_titulo {
+    color: #45A29E; /* Um verde-azulado mais escuro */
+    font-weight: bold;
+}
+
+p {
+    color: #C5C6C7;
+    font-size: 20px;
+    margin: 18px 0;
+    line-height: 1.6;
+}
+
+p strong {
+    color: #66FCF1; /* Verde-água cibernético */
+    font-weight: 600;
+}
+
+#imagem-direita {
+    position: fixed; 
+    top: 25%;
+    right: 2%;
+    width: 700px;
+    height: auto;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(102, 252, 241, 0.3); /* Sombra com brilho cibernético */
+    background-color: #1F2833; /* Um cinza azulado escuro */
+    padding: 10px;
+    border: 1px solid rgba(102, 252, 241, 0.2); /* Borda sutil */
+}
+
+#imagem-direita img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #1F2833; /* Um cinza azulado escuro */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: 60px;
+    box-shadow: 0 -2px 10px rgba(102, 252, 241, 0.1); /* Sombra sutil */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-links a {
+    background-color: #66FCF1; 
+    color: #0B0C10; 
+    padding: 8px 16px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin: 5px;
+    border: 2px solid transparent;
+}
+
+.footer-links a:hover {
+    background-color: #45A29E; 
+    color: #C5C6C7; 
+    box-shadow: 0 0 12px rgba(102, 252, 241, 0.8); /* Efeito do brilho passar mouse */
+    transform: scale(1.05); /* Aumenta botão quando passa o mouse */
+}
+
+.footer-links a:active {
+    transform: scale(0.98); /* Efeito de clique */
+}
+
+#direitos {
+    color: #C5C6C7;
+    font-size: 16px;
+}
+
+/* Media Query para notebooks com resolução 1366x768 */
+@media screen and (max-width: 1366px) {
+    body {
+        font-size: 16px; /* Diminui o tamanho da fonte para se ajustar melhor */
+        padding: 10px;
+    }
+
+    .topbar {
+        font-size: 20px; /* Diminui a fonte do topo */
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 45px; /* Diminui o tamanho do título */
+    }
+
+    h2 {
+        font-size: 24px; /* Ajuste o título secundário */
+    }
+
+    .content {
+        max-width: 60%; /* Deixa o conteúdo mais estreito para mais espaço */
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 10px;
+    }
+
+    #portifolio {
+        font-size: 30px; /* Diminui o título do portfólio */
+    }
+
+    #destaque_roxo {
+        font-size: 18px; /* Ajusta o tamanho do texto */
+    }
+
+    #imagem-direita {
+        position: relative;
+        top: 10%;
+        right: 5%;
+        width: 400px; /* Diminuindo a largura da imagem */
+        height: auto;
+        margin: 0 auto; /* Centraliza a imagem */
+        overflow: hidden;
+        background-color: #1F2833; /* Um cinza azulado escuro */
+        box-shadow: 0 0 15px rgba(102, 252, 241, 0.3); /* Sombra com brilho cibernético */
+        border: 1px solid rgba(102, 252, 241, 0.2); /* Borda sutil */
+        border-radius: 25px; /* Arredonda os cantos da imagem */
+        display: flex;
+        justify-content: center; /* Centraliza o conteúdo dentro do contêiner */
+        align-items: center; /* Centraliza o conteúdo dentro do contêiner */
+        overflow: hidden; /* Garante que nada saia do contêiner */
+        margin: 0; /* Remove a margem */
+        padding: 0; /* Remove o padding */
+    }
+
+    #imagem-direita img {
+        width: 120%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 15px;
+    }
+
+    p {
+        font-size: 16px; /* Ajuste no texto para ser mais compacto */
+    }
+
+    footer {
+        padding: 2px; /* Menos padding para o rodapé */
+        font-size: 14px; /* Ajusta o texto no rodapé */
+    }
+
+    .footer-links a {
+        padding: 6px 12px; /* Ajusta o tamanho dos botões */
+        font-size: 16px;
+    }
+}
