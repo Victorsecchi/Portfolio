@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <link rel="stylesheet" href="./formulario.css">
+</head>
+<body>
+    <table class="tabela_principal">
+        <tr>
+            <td>
+                <form action="" class="formulario" method="post" onsubmit="formulario.Enviar()">
+                    <label class="etiqueta" for="nome">Nome do usuário:</label>
+                    <input type="text" name="nome" id="nome">
+                    <label class="etiqueta" for="email">e-Mail principal</label>
+                    <input type="text" name="email" id="email">
+                    <label class="etiqueta" for="fone">Fone de contato</label>
+                    <input type="text" name="fone" id="fone">
+                    <label class="etiqueta" for="mensagem">Escreva sua mensagem:</label>
+                    <input type="text" name="mensagem" id="mensagem">
+                    <label class="etiqueta" for="idade">Qual a sua idade?</label>
+                    <input type="numeric" name="idade" id="idade">
+                    <label class="etiqueta" for="data_cadastro">Data de cadastro</label>
+                    <input type="text" name="data_cadastro" id="data_cadastro">
+                    <label class="etiqueta" for="tipo_contato">Você prefere ser contatado por:</label>
+                    <input type="text" name="tipo_contato" id="tipo_contato">
+                    <button type="submit" class="botao" id="btn_enviar">Enviar</button>
+                    <button type="reset" class="botao" id="btn_limpar">Limpar</button>
+                </form>    
+            </td>
+            <td>
+                <table class="grid">
+                    <thead class="grid_cabecalho">
+                        <tr>
+                            <th class="coluna">Nome</th>
+                            <th class="coluna">Email</th>
+                            <th class="coluna">Fone</th>
+                            <th class="coluna">Idade</th>
+                            <th class="coluna">Mensagem</th>
+                            <th class="coluna">Cadastro</th>
+                            <th class="coluna">Tipo Contato</th>
+                            <th id="coluna_edicao">Editar / Deletar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+<script>
+    alert('aviso');
+</script>
+</html>
+
+
+
+
