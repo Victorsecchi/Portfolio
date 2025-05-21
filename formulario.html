@@ -11,21 +11,30 @@
     <table class="tabela_principal">
         <tr>
             <td>
-                <form action="" class="formulario" method="post" onsubmit="formulario.Enviar()">
+                <form action="" class="formulario" method="post" onsubmit="return formulario.Enviar()">
                     <label class="etiqueta" for="nome">Nome do usuário:</label>
                     <input type="text" name="nome" id="nome">
                     <label class="etiqueta" for="email">e-Mail principal</label>
-                    <input type="text" name="email" id="email">
+                    <input type="email" name="email" id="email">
                     <label class="etiqueta" for="fone">Fone de contato</label>
-                    <input type="text" name="fone" id="fone">
+                    <input type="tel" name="fone" id="fone">
                     <label class="etiqueta" for="mensagem">Escreva sua mensagem:</label>
                     <input type="text" name="mensagem" id="mensagem">
                     <label class="etiqueta" for="idade">Qual a sua idade?</label>
-                    <input type="numeric" name="idade" id="idade">
+                    <input type="number" name="idade" id="idade">
                     <label class="etiqueta" for="data_cadastro">Data de cadastro</label>
-                    <input type="text" name="data_cadastro" id="data_cadastro">
+                    <input type="date" name="data_cadastro" id="data_cadastro">
                     <label class="etiqueta" for="tipo_contato">Você prefere ser contatado por:</label>
-                    <input type="text" name="tipo_contato" id="tipo_contato">
+                    <div class="opcoes_contato">
+                        <input type="radio" name="tipo_contato" id="email_contato" value="email">
+                        <label for="email_contato">Email</label>
+                        
+                        <input type="radio" name="tipo_contato" id="ligacao_contato" value="ligacao">
+                        <label for="ligacao_contato">Ligação</label>
+                        
+                        <input type="radio" name="tipo_contato" id="whatsapp_contato" value="whatsapp">
+                        <label for="whatsapp_contato">WhatsApp</label>
+                    </div>
                     <button type="submit" class="botao" id="btn_enviar">Enviar</button>
                     <button type="reset" class="botao" id="btn_limpar">Limpar</button>
                 </form>    
@@ -51,12 +60,6 @@
             </td>
         </tr>
     </table>
+    <script src="formulario.js"></script>
 </body>
-<script>
-    alert('aviso');
-</script>
-</html>
-
-
-
 
